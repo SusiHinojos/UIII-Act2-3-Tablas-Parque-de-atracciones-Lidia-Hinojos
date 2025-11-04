@@ -1,74 +1,74 @@
 # Proyecto: Parque de Atracciones
 
-**Lenguaje**: Python  
-**Framework**: Django  
-**Editor**: VS Code  
-
----
+## Lenguaje: Python
+## Framework: Django
+## Editor: VS Code
 
 ## Procedimientos
+## 1. Crear la Carpeta del Proyecto
 
-### 1. Crear carpeta del Proyecto
+Nombre de la carpeta: UIII_parquedeatracciones_0248
 
-- Crear la carpeta: `UIII_parquedeatracciones_0248`
+## 2. Abrir VS Code en la Carpeta
 
-### 2. Abrir VS Code sobre la carpeta
+Navega hasta la carpeta UIII_parquedeatracciones_0248 y abre VS Code desde ahí.
 
-- Abrir la carpeta `UIII_parquedeatracciones_0248` en VS Code.
+## 3. Abrir Terminal en VS Code
 
-### 3. Abrir terminal en VS Code
+Puedes abrir la terminal desde el menú de VS Code o usando el atajo de teclado.
 
-- Abrir la terminal integrada dentro de VS Code.
+## 4. Crear el Entorno Virtual
 
-### 4. Crear entorno virtual `.venv` desde terminal
+Desde la terminal de VS Code, ejecuta el siguiente comando para crear el entorno virtual:
 
-- Ejecutar el comando en terminal para crear el entorno virtual:
-  ```bash
-  python -m venv .venv
-5. Activar el entorno virtual
+python -m venv .venv
+
+## 5. Activar el Entorno Virtual
+
+En la terminal, activa el entorno virtual:
+
 En Windows:
 
-bash
-Copiar código
 .\.venv\Scripts\activate
-En macOS/Linux:
 
-bash
-Copiar código
+
+En Mac/Linux:
+
 source .venv/bin/activate
-6. Activar el intérprete de Python
-En VS Code, selecciona el intérprete de Python desde la barra inferior o desde el comando Python: Select Interpreter.
 
-7. Instalar Django
-Ejecutar el comando para instalar Django:
+## 6. Activar el Intérprete de Python
 
-bash
-Copiar código
+Asegúrate de que VS Code esté usando el intérprete de Python correcto desde la paleta de comandos (Ctrl + Shift + P).
+
+## 7. Instalar Django
+
+Con el entorno virtual activo, instala Django:
+
 pip install django
-8. Crear proyecto backend_parque sin duplicar carpeta
-Ejecutar el comando:
 
-bash
-Copiar código
+## 8. Crear el Proyecto Django
+
+Crea el proyecto sin duplicar la carpeta:
+
 django-admin startproject backend_parque
-9. Ejecutar servidor en el puerto 8016
-Para ejecutar el servidor en el puerto 8016:
 
-bash
-Copiar código
+## 9. Ejecutar el Servidor en el Puerto 8016
+
+Para correr el servidor en el puerto 8016:
+
 python manage.py runserver 8016
-10. Copiar y pegar el link en el navegador
-El servidor estará disponible en: http://127.0.0.1:8016
 
-11. Crear aplicación app_parque
-Ejecutar el comando para crear la app:
+## 10. Acceder al Proyecto en el Navegador
 
-bash
-Copiar código
+Copia el link generado en la terminal y pégalo en tu navegador: http://127.0.0.1:8016
+
+## 11. Crear la Aplicación app_parque
+
+Dentro del directorio backend_parque, crea la aplicación app_parque:
+
 python manage.py startapp app_parque
-Modelos en models.py
-python
-Copiar código
+
+Modelo models.py
 from django.db import models
 
 # ==========================================
@@ -115,75 +115,132 @@ class Atraccion(models.Model):
 
     def __str__(self):
         return self.nombre
-Procedimientos adicionales
-12. Realizar migraciones (makemigrations y migrate)
-Ejecutar los siguientes comandos:
 
-bash
-Copiar código
+## 12. Realizar Migraciones
+
+Realiza las migraciones necesarias para crear las tablas en la base de datos:
+
 python manage.py makemigrations
 python manage.py migrate
-13. Trabajar con el modelo: EMPLEADO
-Crear las vistas y operaciones CRUD para Empleado.
 
-14. Vistas en views.py para operaciones CRUD en Empleado
-python
-Copiar código
-# views.py de app_parque
-from django.shortcuts import render
+## 13. Trabajar con el Modelo Empleado
 
-def inicio_parque(request):
-    return render(request, 'inicio.html')
+Crea las vistas y funcionalidades correspondientes en la aplicación.
 
-def agregar_empleado(request):
-    # Código para agregar empleado
-    pass
+## 14. Funciones en views.py de app_parque
 
-def actualizar_empleado(request):
-    # Código para actualizar empleado
-    pass
+En views.py, crea las funciones necesarias:
 
-def realizar_actualizacion_empleado(request):
-    # Código para realizar actualización de empleado
-    pass
+inicio_parque
 
-def borrar_empleado(request):
-    # Código para borrar empleado
-    pass
-15. Crear la carpeta "templates" dentro de app_parque
-Estructura de directorios:
+agregar_empleado
 
-css
-Copiar código
-app_parque/
-└── templates/
-    ├── base.html
-    ├── header.html
-    ├── navbar.html
-    ├── footer.html
-    └── inicio.html
-16. Agregar Bootstrap en base.html
-Incluir los enlaces a Bootstrap para CSS y JS.
+actualizar_empleado
 
-17. Crear archivos HTML de la interfaz
-navbar.html con opciones de menú.
+realizar_actualizacion_empleado
 
-footer.html con derechos de autor y fecha.
+borrar_empleado
 
-inicio.html con información del sistema.
+## 15. Crear la Carpeta templates en app_parque
 
-Tareas pendientes
-Modelo Cliente y Atracción: A trabajar más adelante.
+Dentro de app_parque, crea la carpeta templates.
 
-Validación de entrada de datos: No se validará en este momento.
+## 16. Archivos HTML en la Carpeta templates
 
-Últimos pasos
-Ejecutar servidor en el puerto 8016:
+Crea los siguientes archivos HTML dentro de app_parque/templates:
 
-bash
-Copiar código
-python manage.py runserver 8016
-El proyecto debe ser completamente funcional.
+base.html
 
-¡Creado por: Lidia Hinojos, Técnico en programación, Cbtis 128**
+header.html
 
+navbar.html
+
+footer.html
+
+inicio.html
+
+## 17. Incluir Bootstrap en base.html
+
+En base.html, agrega Bootstrap para CSS y JS.
+
+## 18. Crear la Barra de Navegación en navbar.html
+
+En navbar.html, crea un menú de navegación con las siguientes opciones:
+
+Sistema de Administración Parque de Atracciones
+
+Inicio
+
+Empleado (con submenú: Agregar empleado, Ver empleado, Actualizar empleado, Borrar empleado)
+
+Clientes (con submenú: Agregar cliente, Ver cliente, Actualizar cliente, Borrar cliente)
+
+Atracciones (con submenú: Agregar atracción, Ver atracción, Actualizar atracción, Borrar atracción)
+
+## 19. Crear el Pie de Página en footer.html
+
+En footer.html, incluye:
+
+Derechos de autor
+
+Fecha del sistema
+
+"Creado por Técnico en Programación Lidia Hinojos, Cbtis 128"
+
+Mantenerlo fijo al final de la página.
+
+## 20. Página de Inicio en inicio.html
+
+En inicio.html, incluye información sobre el sistema y una imagen relacionada con el parque de atracciones.
+
+## 21. Subcarpeta empleado en templates
+
+Crea la subcarpeta empleado dentro de app_parque/templates.
+
+## 22. Archivos HTML de Empleados
+
+Crea los siguientes archivos dentro de app_parque/templates/empleado:
+
+agregar_empleado.html
+
+ver_empleado.html (muestra los empleados en una tabla con botones para ver, editar y borrar)
+
+actualizar_empleado.html
+
+borrar_empleado.html
+
+## 23. No Usar forms.py
+
+No se utilizará forms.py para la creación de formularios.
+
+## 24. Crear urls.py en app_parque
+
+En app_parque, crea el archivo urls.py para enlazar las funciones de views.py con las URLs correspondientes para las operaciones CRUD de empleados.
+
+## 25. Registrar app_parque en settings.py
+
+Agrega app_parque en el archivo settings.py de backend_parque.
+
+## 26. Configurar urls.py en backend_parque
+
+Configura el archivo urls.py de backend_parque para enlazarlo con app_parque.
+
+## 27. Registrar Modelos en admin.py y Migraciones
+
+Registra el modelo Empleado en admin.py y realiza las migraciones correspondientes.
+
+## 28. Diseño Visual
+
+Utiliza colores suaves y modernos para la interfaz web.
+
+## 29. Estructura de Carpetas y Archivos
+
+Asegúrate de crear la estructura completa de carpetas y archivos al inicio del proyecto.
+
+## 30. Proyecto Funcional
+
+El proyecto debe estar completamente funcional y listo para usar.
+
+## 31. Ejecutar Servidor en el Puerto 8016
+
+Finalmente, ejecuta el servidor en el puerto 8016 para probar la aplicación.
