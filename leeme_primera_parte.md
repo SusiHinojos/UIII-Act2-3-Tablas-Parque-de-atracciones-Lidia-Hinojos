@@ -187,11 +187,3 @@ El proyecto debe ser completamente funcional.
 
 ¡Creado por: Lidia Hinojos, Técnico en programación, Cbtis 128**
 
-markdown
-Copiar código
-
-### ¿Cómo hacerlo en GitHub?
-1. En tu repositorio de GitHub, crea un archivo nuevo llamado `README.md` (o abre uno si ya existe).
-2. Copia y pega el código de arriba en el archivo.
-3. Guarda el archivo.
-4. Realiza un *commit* y *push* para subirlo al repositorio.
