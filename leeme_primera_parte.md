@@ -247,40 +247,40 @@ Finalmente, ejecuta el servidor en el puerto 8016 para probar la aplicación.
 ## Estructura de Carpetas y Archivos
 UIII_parquedeatracciones_0248/
 │
-├── backend_parque/                  # Carpeta principal del proyecto
-│   ├── backend_parque/              # Carpeta del proyecto Django
+├── backend_parque/               
+│   ├── backend_parque/            
 │   │   ├── __init__.py
 │   │   ├── asgi.py
-│   │   ├── settings.py              # Archivo de configuración del proyecto
-│   │   ├── urls.py                  # Configuración de URLs a nivel de proyecto
+│   │   ├── settings.py            
+│   │   ├── urls.py                  
 │   │   └── wsgi.py
 │   │
-│   ├── app_parque/                  # Carpeta de la aplicación Django
+│   ├── app_parque/                 
 │   │   ├── __init__.py
-│   │   ├── admin.py                 # Registro de modelos en el admin de Django
+│   │   ├── admin.py                
 │   │   ├── apps.py
-│   │   ├── migrations/              # Carpeta para las migraciones de la base de datos
+│   │   ├── migrations/            
 │   │   │   └── __init__.py
-│   │   ├── models.py                # Definición de los modelos
+│   │   ├── models.py              
 │   │   ├── tests.py
-│   │   ├── views.py                 # Funciones para manejar las vistas
-│   │   ├── urls.py                  # Enlace de URLs de la aplicación
-│   │   └── templates/               # Carpeta para los templates HTML
-│   │       ├── base.html            # Estructura base del sitio
-│   │       ├── footer.html          # Pie de página
-│   │       ├── header.html          # Cabecera
-│   │       ├── navbar.html          # Barra de navegación
-│   │       ├── inicio.html          # Página de inicio
-│   │       └── empleado/            # Subcarpeta para las vistas de empleados
+│   │   ├── views.py               
+│   │   ├── urls.py                 
+│   │   └── templates/               
+│   │       ├── base.html           
+│   │       ├── footer.html       
+│   │       ├── header.html        
+│   │       ├── navbar.html        
+│   │       ├── inicio.html         
+│   │       └── empleado/          
 │   │           ├── agregar_empleado.html
 │   │           ├── ver_empleado.html
 │   │           ├── actualizar_empleado.html
 │   │           └── borrar_empleado.html
 │   │
-│   ├── manage.py                    # Script para gestionar el proyecto
-│   └── db.sqlite3                   # Base de datos SQLite (si se usa)
+│   ├── manage.py                  
+│   └── db.sqlite3                  
 │
-├── .venv/                           # Entorno virtual (oculto en algunos sistemas)
-│   └── ...                          # Archivos y carpetas internas del entorno virtual
+├── .venv/                           
+│   └── ...                        
 │
-└── requirements.txt                 # Archivo con las dependencias del proyecto (opcional)
+└── requirements.txt                 
