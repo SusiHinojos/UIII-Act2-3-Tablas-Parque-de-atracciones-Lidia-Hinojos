@@ -247,13 +247,20 @@ Finalmente, ejecuta el servidor en el puerto 8016 para probar la aplicación.
 ## Estructura de Carpetas y Archivos
 UIII_parquedeatracciones_0248/
 │
-├── backend_parque/               
-│   ├── backend_parque/            
+├── backend_parque/   
+
+│   ├── backend_parque/     
+
 │   │   ├── __init__.py
+
 │   │   ├── asgi.py
-│   │   ├── settings.py            
-│   │   ├── urls.py                  
+
+│   │   ├── settings.py  
+
+│   │   ├── urls.py   
+
 │   │   └── wsgi.py
+
 │   │
 │   ├── app_parque/                 
 │   │   ├── __init__.py
