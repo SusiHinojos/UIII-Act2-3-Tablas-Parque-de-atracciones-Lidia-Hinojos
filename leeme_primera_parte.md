@@ -262,32 +262,58 @@ UIII_parquedeatracciones_0248/
 │   │   └── wsgi.py
 
 │   │
-│   ├── app_parque/                 
+│   ├── app_parque/   
+
 │   │   ├── __init__.py
-│   │   ├── admin.py                
+
+│   │   ├── admin.py  
+
 │   │   ├── apps.py
-│   │   ├── migrations/            
+
+│   │   ├── migrations/  
+
 │   │   │   └── __init__.py
-│   │   ├── models.py              
+
+│   │   ├── models.py  
+
 │   │   ├── tests.py
-│   │   ├── views.py               
-│   │   ├── urls.py                 
-│   │   └── templates/               
-│   │       ├── base.html           
-│   │       ├── footer.html       
-│   │       ├── header.html        
-│   │       ├── navbar.html        
-│   │       ├── inicio.html         
-│   │       └── empleado/          
+
+│   │   ├── views.py  
+
+│   │   ├── urls.py 
+
+│   │   └── templates/   
+
+│   │       ├── base.html 
+
+│   │       ├── footer.html   
+
+│   │       ├── header.html 
+
+│   │       ├── navbar.html  
+
+│   │       ├── inicio.html  
+
+│   │       └── empleado/ 
+
 │   │           ├── agregar_empleado.html
+
 │   │           ├── ver_empleado.html
+
 │   │           ├── actualizar_empleado.html
+
 │   │           └── borrar_empleado.html
+
 │   │
-│   ├── manage.py                  
-│   └── db.sqlite3                  
+│   ├── manage.py   
+
+│   └── db.sqlite3 
+
 │
-├── .venv/                           
-│   └── ...                        
+
+├── .venv/        
+
+│   └── ...     
+
 │
 └── requirements.txt                 
