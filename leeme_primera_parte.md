@@ -244,3 +244,43 @@ El proyecto debe estar completamente funcional y listo para usar.
 ## 31. Ejecutar Servidor en el Puerto 8016
 
 Finalmente, ejecuta el servidor en el puerto 8016 para probar la aplicación.
+## Estructura de Carpetas y Archivos
+UIII_parquedeatracciones_0248/
+│
+├── backend_parque/                  # Carpeta principal del proyecto
+│   ├── backend_parque/              # Carpeta del proyecto Django
+│   │   ├── __init__.py
+│   │   ├── asgi.py
+│   │   ├── settings.py              # Archivo de configuración del proyecto
+│   │   ├── urls.py                  # Configuración de URLs a nivel de proyecto
+│   │   └── wsgi.py
+│   │
+│   ├── app_parque/                  # Carpeta de la aplicación Django
+│   │   ├── __init__.py
+│   │   ├── admin.py                 # Registro de modelos en el admin de Django
+│   │   ├── apps.py
+│   │   ├── migrations/              # Carpeta para las migraciones de la base de datos
+│   │   │   └── __init__.py
+│   │   ├── models.py                # Definición de los modelos
+│   │   ├── tests.py
+│   │   ├── views.py                 # Funciones para manejar las vistas
+│   │   ├── urls.py                  # Enlace de URLs de la aplicación
+│   │   └── templates/               # Carpeta para los templates HTML
+│   │       ├── base.html            # Estructura base del sitio
+│   │       ├── footer.html          # Pie de página
+│   │       ├── header.html          # Cabecera
+│   │       ├── navbar.html          # Barra de navegación
+│   │       ├── inicio.html          # Página de inicio
+│   │       └── empleado/            # Subcarpeta para las vistas de empleados
+│   │           ├── agregar_empleado.html
+│   │           ├── ver_empleado.html
+│   │           ├── actualizar_empleado.html
+│   │           └── borrar_empleado.html
+│   │
+│   ├── manage.py                    # Script para gestionar el proyecto
+│   └── db.sqlite3                   # Base de datos SQLite (si se usa)
+│
+├── .venv/                           # Entorno virtual (oculto en algunos sistemas)
+│   └── ...                          # Archivos y carpetas internas del entorno virtual
+│
+└── requirements.txt                 # Archivo con las dependencias del proyecto (opcional)
